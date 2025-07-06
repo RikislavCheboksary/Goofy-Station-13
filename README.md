@@ -64,3 +64,7 @@ We provide some scripts shown below to make the job easier.
 ## License
 
 Please read the [LEGAL.md](./LEGAL.md) file for information on the licenses of the code and assets in this repository.
+
+## Notice
+
+All content related to BloodCult, cultist, and WhiteDream has been fully removed from this repository. If you are looking for this content, please refer to previous commits or relevant forks.

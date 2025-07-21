@@ -159,18 +159,4 @@ public sealed partial class AdminVerbSystem
         if (!HasComp<SiliconComponent>(args.Target))
             args.Verbs.Add(ling);
 
-        Verb cultist = new()
-        {
-            Text = Loc.GetString("admin-verb-text-make-blood-cultist"),
-            Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Objects/Weapons/Melee/cult_dagger.rsi"), "icon"),
-            Act = () =>
-            {
-                _antag.ForceMakeAntag<BloodCultRuleComponent>(targetPlayer, DefaultBloodCultRule);
-            },
-            Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-blood-cultist"),
-        };
-        args.Verbs.Add(cultist);
-    }
 }
